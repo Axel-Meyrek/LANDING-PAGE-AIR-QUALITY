@@ -2,10 +2,10 @@ particlesJS(
     {
         "particles": {
           "number": {
-            "value": 30,
+            "value": 10,
             "density": {
               "enable": true,
-              "value_area": 120
+              "value_area": 50
             }
           },
           "color": {
@@ -50,7 +50,7 @@ particlesJS(
             "enable": true,
             "distance": 150,
             "color": "#20AEDB",
-            "opacity": 0.2,
+            "opacity": 0.1,
             "width": 1
           },
           "move": {
