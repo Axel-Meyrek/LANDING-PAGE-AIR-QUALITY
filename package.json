@@ -1,0 +1,16 @@
+{
+  "name": "landing-page-air-quality",
+  "version": "1.0.0",
+  "description": "Aplicacion para analizar los datos en tiempo real de la calidad del aire",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Axel Velasco Chavez",
+  "license": "ISC"
+}
