@@ -61,6 +61,16 @@
     }
 }
 
+@media (width < 560px) {
+    .home_flex {
+        flex-direction: column;
+    }
+
+    .home_button {
+        max-width: none;
+    }
+}
+
 
 @media (width < 450px) {
     .aboutUs_card {
@@ -82,15 +92,5 @@
     section {
         padding-top: 50px;
         padding-bottom: 20px;
-    }
-}
-
-@media (width < 350px) {
-    .home_flex {
-        flex-direction: column;
-    }
-
-    .home_button {
-        max-width: none;
     }
 }
