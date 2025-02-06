@@ -479,6 +479,8 @@ section {
     border-radius: var(--borderSmall);
     border: none;
     border: 2px solid var(--colorEnfasis);
+    backdrop-filter: blur(4px);
+    background-color: #dae8fec7;
 }
 
 .formulario_button {
