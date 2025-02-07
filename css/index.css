@@ -107,15 +107,16 @@ section {
 
 .navegacion_item {
     text-align: center;
-    border-bottom: 2px solid transparent;
+    border: 2px solid transparent;
     padding: 0px 1em;
     transition-duration: .3s;
     transition-property: border-color, color, scale;
+    border-radius: var(--borderSmall);
 }
 
 .navegacion_item:hover {
     color: var(--colorEnfasis);
-    border-bottom-color: var(--colorEnfasis);
+    border-color: var(--colorEnfasis);
     scale: 1.1;
 }
 
