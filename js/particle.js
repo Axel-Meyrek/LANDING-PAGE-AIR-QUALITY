@@ -36,7 +36,7 @@ particlesJS({
         }
       },
       "size": {
-        "value": 70,
+        "value": 30,
         "random": false,
         "anim": {
           "enable": true,
@@ -54,7 +54,7 @@ particlesJS({
       },
       "move": {
         "enable": true,
-        "speed": 5,
+        "speed": 3,
         "direction": "bottom",
         "random": false,
         "straight": false,

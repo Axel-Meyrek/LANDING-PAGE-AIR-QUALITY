@@ -11,6 +11,7 @@ const calcularRiesgo = async () => {
         headers: {
             'Content-Type': 'application/json'
         },
+        /* ESTOS DATOS DEBO RECUPERARLOS DE LA BD MARIA DB */
         body: JSON.stringify( {
             "Temperature": 25.0,
             "RelativeHumidity": 40.0,
