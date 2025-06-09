@@ -361,6 +361,7 @@ section {
     display: flex;
     gap: 1em;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .article {
@@ -370,6 +371,7 @@ section {
     width: calc(33% - 1em);
     box-shadow: 0px 4px 4px var(--colorBlackTranspariencia);
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 1em;
     transition-duration: .5s;
