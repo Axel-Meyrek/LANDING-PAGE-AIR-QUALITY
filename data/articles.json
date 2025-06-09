@@ -1,19 +1,19 @@
 [
   {
     "nombre": "Determining environmental indicators related to the propagation of contagious diseases and health issues: A Systematic Literature Review",
-    "descripcion": "Una guía básica para comenzar a programar con JavaScript, el lenguaje de la web.",
+    "descripcion": "Systematic review of environmental indicators related to the propagation of contagious diseases and health issues",
     "fecha_publicacion": "2025-05-01",
     "ruta": "Determining_environmental_indicators_related_to_the_propagation_of_contagious_diseases_and_health_issues_A_Systematic_Literature_Review"
   },
   {
     "nombre": "CameraReady-Improving Public Health Policies with Indoor Air Quality Predictive Models",
-    "descripcion": "Explicación del Modelo de Objetos del Documento (DOM) y cómo interactuar con él usando JavaScript.",
+    "descripcion": "Improving public health policies through indoor air quality predictive models",
     "fecha_publicacion": "2025-05-10",
     "ruta": "CameraReady-Improving_Public_Health_Policies_with_Indoor_Air_Quality_Predictive_Models"
   },
   {
     "nombre": "Beyond One Room Comprehensive Predictive Analysis of CO2 in Indoor Air Quality",
-    "descripcion": "Consejos y técnicas para mantener tu código legible, eficiente y mantenible.",
+    "descripcion": "Comprehensive predictive analysis of CO2 in indoor air quality beyond one room",
     "fecha_publicacion": "2025-05-20",
     "ruta": "Beyond_One_Room_Comprehensive_Predictive_Analysis_of_CO2_in_Indoor_Air_Quality"
   }
