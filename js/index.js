@@ -12,7 +12,7 @@ const calcularRiesgo = async () => {
             'Content-Type': 'application/json'
         },
         /* ESTOS DATOS DEBO RECUPERARLOS DE LA BD MARIA DB */
-        body: JSON.stringify( {
+        body: JSON.stringify({
             "Temperature": 25.0,
             "RelativeHumidity": 40.0,
             "DoorOpen": true,
@@ -24,7 +24,7 @@ const calcularRiesgo = async () => {
             "PM25": 24,
             "PM10": 24,
             "Model": "model_risk"
-          })
+        })
     };
 
     /* PETICIÓN */
@@ -38,6 +38,50 @@ const calcularRiesgo = async () => {
     }
 }
 
+const abrirModal = (nombreDocumento) =>  {
+    document.querySelector('#miModal').style.display = 'block';
+    document.querySelector('#visorPDF').src = nombreDocumento;
+}
+
+const cerrarModal = () => {
+    document.querySelector('#miModal').style.display = 'none';
+}
+
+window.onclick = function (event) {
+    const modal = document.getElementById('miModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+const renderArticles = async () => {
+    const $containerArticles = document.querySelector('#containerArticles');
+
+    const response = await fetch('../data/articles.json', {
+        mode: 'no-cors'
+    });
+    
+    const data = await response.json();
+    console.log(data);
+
+    data.forEach(article => {
+        const {nombre, descripcion, fecha_publicacion, ruta} = article;
+        const $article = /* html */
+            `<article class="article">
+                <h3 class="article_title">${nombre}</h3>
+                <p class="article_description">${descripcion}</p>
+                <div class="article_flex">
+                    <p class="article_date">${fecha_publicacion}</p>
+                    <button id="btnMirarPDF" onclick="abrirModal('./articles/${ruta}.pdf')" class="article_button">Leer Completo</button>
+                </div>
+            </article>`;
+
+        $containerArticles.innerHTML += $article;
+    });
+}
+
 
 /* EVENTOS */
 document.addEventListener('DOMContentLoaded', calcularRiesgo);
+
+document.addEventListener('DOMContentLoaded', renderArticles);

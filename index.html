@@ -214,34 +214,16 @@
         <section id="blog" class="blog">
             <h2 class="blog_title">Latest Blog News</h2>
             <p class="blog_subtitle">Stay up to date with the latest insights, trends, and innovations in environmental monitoring and sustainability.</p>
-            <div class="blog_flex">
+            <div id="containerArticles" class="blog_flex">
                 <!-- CARD -->
-                <article class="article">
+                <!-- <article class="article">
                     <h3 class="article_title">How to improve the air quality in your home</h3>
                     <p class="article_description">Discover practical tips for maintaining a healthy environment at home.</p>
                     <div class="article_flex">
                         <p class="article_date">March 15th, 2024.</p>
-                        <a class="article_button" href="#">Leer Completo</a>
+                        <button id="btnMirarPDF" onclick="abrirModal('./articles/Determining_environmental_indicators_related_to_the_propagation_of_contagious_diseases_and_health_issues_A_Systematic_Literature_Review.pdf')" class="article_button" href="#">Leer Completo</button>
                     </div>
-                </article>
-                <!-- CARD -->
-                <article class="article">
-                    <h3 class="article_title">How to improve the air quality in your home</h3>
-                    <p class="article_description">Discover practical tips for maintaining a healthy environment at home.</p>
-                    <div class="article_flex">
-                        <p class="article_date">March 15th, 2024.</p>
-                        <a class="article_button" href="#">Leer Completo</a>
-                    </div>
-                </article>
-                <!-- CARD -->
-                <article class="article">
-                    <h3 class="article_title">How to improve the air quality in your home</h3>
-                    <p class="article_description">Discover practical tips for maintaining a healthy environment at home.</p>
-                    <div class="article_flex">
-                        <p class="article_date">March 15th, 2024.</p>
-                        <a class="article_button" href="#">Leer Completo</a>
-                    </div>
-                </article>
+                </article> -->
             </div>
         </section>
 
@@ -284,6 +266,20 @@
         </div>
         <p class="footer_description">MeyScripting <br>Solo Software de calidad</p>
     </footer>
+
+
+    <!-- MODAL -->
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+        <div class="modal-header">
+            <span>Artículo de Investigación</span>
+            <button class="close" onclick="cerrarModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <iframe src="articulo.pdf" id="visorPDF"></iframe>
+        </div>
+        </div>
+    </div>
 
 
 
